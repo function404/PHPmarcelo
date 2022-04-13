@@ -9,20 +9,25 @@ No script tambem deve fornecer a media dos 3 numeros por meio
 de uma segunda função;
 
 
+*/   
+    // callback
+    functionResult();
 
-*/
+    // result
+    function functionResult(){
+        $media = calcu(4, 1, 5);
 
-$valor = 0;
+        $total = ($media / 3);
+        $value = $total;
 
-somar();
+        return print('<h1>Sua media é: '.intval($value).'</h1>');
+    };
 
-function somar(){
-    $media = dividir(10, 10, 10);
-    $valor = ($media / 3);
-    return print('Média é: '.$valor);
-};
+    // calc
+    function calcu($n1 = 0, $n2 = 0, $n3 = 0){
+        $value = 0;
 
-function dividir($num1 = 0, $num2 = 0, $num3 = 0){
-    return $value = ($num1 + $num2 + $num3);
-};
+        return $value = ($n1 + $n2 + $n3);
+    };
+    
 ?>
